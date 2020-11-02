@@ -14,3 +14,5 @@ def mode(*args):
 # Returns first quartile of given numbers
 def first_quartile(*args):
     return NotImplemented
+
+#Comment
