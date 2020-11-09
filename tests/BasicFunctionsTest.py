@@ -7,7 +7,7 @@ def add_test():
     unit_test(16, add, 10.4, 5.6)
     unit_test(-5, add, -10, 5)
     unit_test(5, add, 5, 0)
-
+    unit_test(-11, add, -5, -6)
 
 # tests if subtract() works for zero, positive numbers and negative numbers
 def subtract_test():
