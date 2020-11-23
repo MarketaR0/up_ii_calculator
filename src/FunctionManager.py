@@ -1,12 +1,13 @@
 from src.BasicFunctions import add, subtract, multiply, divide
-
+from src.AdvFunctions import factorial
 
 class FunctionManager:
     functions = {
         0: (add, 2, "Add"),
         1: (subtract, 2, "Subtract"),
         2: (multiply, 2, "Multiply"),
-        3: (divide, 2, "Divide")
+        3: (divide, 2, "Divide"),
+        4: (factorial, 1, "Factorial")
     }
 
     def use_function(self, choice, *args):
