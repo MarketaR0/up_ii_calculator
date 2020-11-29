@@ -19,6 +19,13 @@ def factorial(num):
 
 # Returns all solutions of given quadratic equation
 def quadratic_eq(qdr_coef, lin_coef, const):
-    return NotImplemented
-
-
+    if qdr_coef == 0:
+        print('The first number must not be zero. Please input a valid number next time.')
+    else:
+        dis = lin_coef * lin_coef - 4 * qdr_coef - 4 * const
+        if dis < 0:
+            print("The result is not a real number.")
+        else:
+            resx1 = (-lin_coef + math.sqrt(dis)) / (2 * qdr_coef)
+            resx2 = (-lin_coef - math.sqrt(dis)) / (2 * qdr_coef)
+            return resx1, resx2
