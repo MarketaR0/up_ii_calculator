@@ -1,5 +1,5 @@
 from src.BasicFunctions import add, subtract, multiply, divide
-from src.AdvFunctions import factorial, quadratic_eq
+from src.AdvFunctions import int_division, factorial, quadratic_eq
 
 class FunctionManager:
     functions = {
@@ -7,8 +7,9 @@ class FunctionManager:
         1: (subtract, 2, "Subtract"),
         2: (multiply, 2, "Multiply"),
         3: (divide, 2, "Divide"),
-        4: (factorial, 1, "Factorial"),
-        5: (quadratic_eq, 3, "Quadratic equation")
+        4: (int_division, 2, "Intereger divition"),
+        5: (factorial, 1, "Factorial"),
+        6: (quadratic_eq, 3, "Quadratic equation")
     }
 
     def use_function(self, choice, *args):

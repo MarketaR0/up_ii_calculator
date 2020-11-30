@@ -13,7 +13,7 @@ def int_division_test():
 def factorial_test():
     unit_test(1, factorial, 0)
     unit_test(1, factorial, 1)
-    unit_test(5, factorial, 120)
+    unit_test(120, factorial, 5)
 
 
 def quadratic_eq_test():

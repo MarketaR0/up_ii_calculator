@@ -15,4 +15,3 @@ def mode(*args):
 def first_quartile(*args):
     return NotImplemented
 
-#Comment

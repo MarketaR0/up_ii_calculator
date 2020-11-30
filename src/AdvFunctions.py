@@ -2,12 +2,15 @@
 import math
 # Returns both result of integer division and modulo
 def int_division(num1, num2):
-    return NotImplemented
-
+    if num2 == 0:
+        print('The second number must not be zero, because you can not divide by zero.')
+    else:
+        return num1 // num2
 
 # Returns factorial of given number
+# In the factorial is a mistake. I'll solve it later, because it's mistake in asking the user and Honza will give me solution (or at least part of it)
 def factorial(num):
-    if num == int:
+    if num.isdigit():
         if num > 0:
             return (math.factorial(num))
         elif num == 0:
